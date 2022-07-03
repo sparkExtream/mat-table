@@ -1,0 +1,51 @@
+mat-icon {
+  font-family: "Material Icons" !important;
+}
+
+.main-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  background-color: white;
+}
+
+.add-details {
+  font-size: var(--sub-heading-text-size);
+  color: grey;
+  background-color: whitesmoke;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  color: var(--light-primary-color);
+}
+
+.details-list {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  height: calc(100% - 80px);
+  overflow-y: scroll;
+}
+
+.mat-list-item {
+  font-size: var(--sub-heading-text-size);
+  color: var(--light-primary-color);
+}
+
+.mat-list-item:hover{
+  background-color: whitesmoke;
+}
+
+.mat-list .mat-list-item {
+  height: 20px;
+}

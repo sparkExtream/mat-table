@@ -1,0 +1,13 @@
+<div class="main-container">
+  <div class="add-details">
+    No description yet
+    <button mat-button>
+      <strong>+Add Description</strong>
+    </button>
+  </div>
+  <div class="details-list">
+    <mat-list role="list" *ngFor="let item of details?.companies">
+      <mat-list-item role="listitem">{{ item }}</mat-list-item>
+    </mat-list>
+  </div>
+</div>

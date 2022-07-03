@@ -1,0 +1,15 @@
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: var(--font-family); }
+
+:root {
+  --font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  --primary-color: #163c5d;
+  --light-primary-color: #163c5db3;
+  --light-blue-font-color: #1d64a2b3;
+  --heading-text-size: 14px;
+  --sub-heading-text-size: 12px;
+}

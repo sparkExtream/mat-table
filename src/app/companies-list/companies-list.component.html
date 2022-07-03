@@ -1,0 +1,8 @@
+<div class="main-conatiner">
+  <!-- header -->
+  <header-view #heaeder (search)="setSearchValue($event)"></header-view>
+  <!-- table -->
+  <table-view #table (details)="setDetails($event)"></table-view>
+  <!-- details -->
+  <details-view #detail [details]="details"></details-view>
+</div>

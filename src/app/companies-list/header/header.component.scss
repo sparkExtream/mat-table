@@ -1,0 +1,43 @@
+mat-icon {
+  font-family: "Material Icons" !important;
+}
+
+.header-box {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 60px;
+  padding: 10px;
+  grid-template-areas: "save filter history .  search search search";
+}
+
+.save-btn {
+  grid-area: save;
+  color: whitesmoke;
+  background-color: var(--primary-color);
+}
+
+.icon-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+  font-size: var(--heading-text-size);
+  font-weight: 350;
+  line-height: 36px;
+}
+
+.filter-btn {
+  grid-area: filter;
+}
+
+.history-btn {
+  grid-area: history;
+}
+
+.search-box {
+  grid-area: search;
+  letter-spacing: 2px;
+  font-size: var(--heading-text-size);
+  font-weight: 350;
+}

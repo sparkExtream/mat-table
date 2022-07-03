@@ -1,0 +1,42 @@
+<div class="header-box">
+  <!-- save -->
+  <button mat-flat-button class="save-btn">
+    <div class="icon-text">
+      <mat-icon>list</mat-icon>
+      &nbsp; SAVED LISTS
+    </div>
+  </button>
+  <!-- filter -->
+  <button mat-flat-button class="filter-btn">
+    <div class="icon-text">
+      <mat-icon>filter_list</mat-icon>
+      &nbsp; SAVED FILTERS
+    </div>
+  </button>
+  <!-- history -->
+  <button mat-flat-button class="history-btn">
+    <div class="icon-text">
+      <mat-icon>history</mat-icon>
+      &nbsp; SEARCH HISTORY
+    </div>
+  </button>
+  <!-- search -->
+  <mat-form-field appearance="outline" class="search-box">
+    <mat-label>Search</mat-label>
+    <input
+      matInput
+      type="text"
+      [(ngModel)]="searchValue"
+      #searchInput
+    />
+    <button
+      *ngIf="searchValue"
+      matSuffix
+      mat-icon-button
+      aria-label="Clear"
+      (click)="clearSearch()"
+    >
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+</div>
